@@ -7,12 +7,14 @@ node {
     def SFDC_USERNAME
 
     def HUB_ORG=env.HUB_ORG_DH
+    def TRY=env.try
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
 
     println 'KEY IS' 
     println BUILD_NUMBER
+    println TRY
     println JWT_KEY_CRED_ID
     println HUB_ORG
     println SFDC_HOST
